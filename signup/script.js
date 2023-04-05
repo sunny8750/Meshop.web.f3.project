@@ -46,7 +46,7 @@ var flag = true;
    users.push(user)
    if(flag){
     localStorage.setItem("users", JSON.stringify(users));
-    location.href="/loginpage/index.html/"
+    location.href="./loginpage/"
    }else{
     alert("something went wrong plzz try again")
    } 
