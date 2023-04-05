@@ -1,7 +1,7 @@
 //chceking if user already exit then redirect to shop page..
 var currentitem = JSON.parse(localStorage.getItem("currentUser")); // getting surent Item Obj
 if (currentitem) { // if current user exist send to dashboard page
-    window.location.href = "/shop/";
+    window.location.href = "./shop/";
 }
 const login = document.getElementById('login-form');
 const errorloginMsg = document.getElementById('error-msg');
@@ -25,7 +25,7 @@ login.addEventListener('submit', (e) => {
         // Store the current user object in local storage
         localStorage.setItem('currentUser', JSON.stringify(currentUserObj));
         // Redirect the user to the dashboard page
-        window.location.href = '/shop/';
+        window.location.href = './shop/';
     } else {
         // Display an error message to the user
         errorloginMsg.textContent = 'Invalid email or password. Please try again.';
