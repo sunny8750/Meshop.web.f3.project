@@ -1,7 +1,7 @@
 //chceking user if not exit then redrict to login page
 var currentitem = JSON.parse(localStorage.getItem("currentUser")); // getting curent Item Obj
 if (!currentitem) {
-    window.location.href = "/loginpage/";
+    window.location.href = "./loginpage/";
 }
 
 var total=0;
@@ -63,5 +63,5 @@ function payment(){
   if(total==0){
     return
   }
-  window.location.href = "/razorpay/";
+  window.location.href = "./razorpay/";
 }
