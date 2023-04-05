@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add your custom styles here */
+      .filter{
+        flex: 1;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      border: 1px solid black;
+      cursor: pointer;
+      }
+     .active {
+      background-color: black;
+      color: white;
+  }
+    </style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="col-9">
+            <a class="navbar-brand" href="#">Meshop</a>
+        </div>
+        <div class="col-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup/">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Shop</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/cart/">MyCart</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile/">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><br>
+	<div style="margin-top: -47px;" class="container-fluld">
+		<div class="row">
+			<div class="col-lg-3 col-md-4">
+				<div class="card my-4 bg-dark text-light">
+					<h5 class="card-header">Filters</h5>
+					<div class="card-body">
+						
+							<div class="form-group">
+								<label for="colorFilter">Color</label>
+                <section>
+                  <title>Colors</title>
+                  <ul>
+                    <li>
+                      <input id="red" type="checkbox" data-color="Red" class="color-filter"  value="Red" />
+                      <label for="red">Red</label>
+                    </li>
+                    <li>
+                      <input id="blue" type="checkbox" data-color="Blue" class="color-filter" value="Blue"  />
+                      <label for="blue">Blue</label>
+                    </li>
+                    <li>
+                      <input id="green" type="checkbox" data-color="Green" class="color-filter" value="Green"  />
+                      <label for="green">Green</label>
+                    </li>
+                    <li>
+                      <input id="black" type="checkbox" data-color="Black" class="color-filter" value="Black"  />
+                      <label for="black">Black</label>
+                    </li>
+                    <li>
+                      <input id="white" type="checkbox" data-color="White" class="color-filter"  value="White" />
+                      <label for="white">White</label>
+                    </li>
+                  </ul>
+                </section>
+							</div>
+							<div class="form-group">
+								<label for="sizeFilter">Size</label>
+                <section>
+                  <title>Sizes</title>
+                  <ul>
+                    <li>
+                      <input id="s" type="checkbox" name="color" value="S" class="size-filter" />
+                      <label for="s">S</label>
+                    </li>
+                    <li>
+                      <input id="m" type="checkbox" name="color" value="M" class="size-filter"/>
+                      <label for="m">M</label>
+                    </li>
+                    <li>
+                      <input id="l" type="checkbox" name="color" value="L" class="size-filter"/>
+                      <label for="l">L</label>
+                    </li>
+                    <li>
+                      <input id="xl" type="checkbox" name="color" value="XL" class="size-filter" />
+                      <label for="xl">XL</label>
+                    </li>
+                  </ul>
+                </section>
+							</div>  
+							<div class="form-group">
+                <section>
+                  <title>Rating</title>
+                  <label>Rating</label>
+                  <input
+                    type="range"
+                    id="range"
+                    min="0"
+                    max="5"
+                    value="0"
+                    list="values"
+                    class="rating-filter"
+                  />
+                  <datalist id="values">
+                    <option value="0" label="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5" label="5"></option>
+                  </datalist>
+                </section>
+							</div> <br>
+              <div class="form-group">
+                <section>
+                  <title>Price Range</title>
+                      <label for="price-slider">Price Range:</label>
+                      <input type="range" class="price-slider" id="price-slider" min="0" max="100" step="4" value="0">
+                </section>
+              </div>					
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-8">
+				<div class="my-5">
+						<div class="form-group mx-sm-3 mb-2">
+							<input type="text" class="form-control" id="filterserach" placeholder="Search">
+						</div>
+				</div>
+				<div class="my-4">
+					
+            <div class="row">
+              <div class="col">
+                <div class="filter active" onclick="filterproduct('All');">All</div>
+              </div>
+              <div class="col">
+                <div class="filter" onclick="filterproduct('mens');">Mens</div>
+              </div>
+              <div class="col">
+                <div class="filter" onclick="filterproduct('womens');">Womens</div>
+              </div>
+              <div class="col">
+                <div class="filter" onclick="filterproduct('jewelery');">Jewelery</div>
+              </div>
+              <div class="col">
+                <div class="filter" onclick="filterproduct('electronics');">Electronics</div>
+              </div>
+            </div>
+			
+				</div>
+				<div class="row">
+					<!-- Products here -->
+          <section style="background-color: #eee;">
+            <div class="text-center container py-5">
+              <div class="row"  id="items">
+       
+              </div>
+            </div>
+          </section>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="script.js"></script>
+</body>
+</html>

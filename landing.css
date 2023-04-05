@@ -1,0 +1,168 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+  
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+  
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+  
+nav .brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+nav .nav-items a{
+    margin: 0 1rem;
+}
+
+.heading{
+    text-align: center;
+}
+
+#btn-login{
+    height: 3rem;
+    width: 6rem;
+    margin-left: 10%;
+    background-color: black;
+    color: white;
+    
+}
+
+#btn-signup{
+    height: 3rem;
+    width: 6rem;
+    margin-top: 0;
+    margin-right: 10%;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 65%;
+}
+
+#landingPagePic{
+   margin-left: 17rem;
+    height: 30rem;
+    width: 40rem;
+    text-align: center;
+}
+/* 
+main-content {
+    padding: 1rem;
+    position: relative;
+  }
+  
+  main-content input {
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+  }
+  
+  main-content .filters {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  main-content .filter {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  main-content .active {
+    background-color: black;
+    color: white;
+  }
+  
+  main-content section {
+    margin-top: 1.2rem;
+  }
+  
+  main-content section title {
+    display: block;
+    font-size: 1.5rem;
+  }
+  
+  main-content .items {
+    display: flex;
+    width: auto;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  
+  main-content .items .item {
+    border: 1px solid black;
+    width: 30%;
+  }
+  
+  main-content .items .item img {
+    max-width: 100%;
+  }
+  
+  main-content .items .item .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  main-content .items .item .info {
+    padding: 1rem;
+  }
+  
+  main-content .items .item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  main-content .items .item .colors {
+    display: flex;
+    margin: 1rem 0;
+  }
+  
+  main-content .items .item .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 0 5px;
+  }
+  
+
+   */
