@@ -1,6 +1,6 @@
 var currentitem = JSON.parse(localStorage.getItem("currentUser")); // getting curent Item Obj
 if (!currentitem) {
-    window.location.href = "../login.html";
+    window.location.href = "./loginpage/";
 }
 var products =""
 async function main() {
