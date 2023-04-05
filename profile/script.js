@@ -4,7 +4,7 @@ const errorMsg = document.getElementById('error-msg'); //set error variable
 //chceking user if not exit then redrict to login page
 var currentitem = JSON.parse(localStorage.getItem("currentUser")); // getting curent Item Obj
 if (!currentitem) {
-    window.location.href = "../login.html";
+    window.location.href = "./loginpage/";
 }
 
 const users = JSON.parse(localStorage.getItem('users')) || []; //getting user array from localstroge
@@ -62,5 +62,5 @@ function logout() {
     localStorage.removeItem("currentUser");
 
     // redirect to login page
-    window.location.href = "/loginpage/";
+    window.location.href = "./loginpage/";
 }
