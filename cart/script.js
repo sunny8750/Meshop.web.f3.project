@@ -12,8 +12,8 @@ var data2 ="";
 
 
 carditem.forEach((value,index) => {
-    total +=Number(value.quantity*value.price);
-    items +=value.quantity;
+    total += Number(value.quantity*value.price);
+    items += value.quantity;
     data +=`<div class="card mb-3 mb-lg-0">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
